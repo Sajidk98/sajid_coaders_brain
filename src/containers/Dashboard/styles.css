@@ -1,0 +1,92 @@
+body {
+  background-color: lightgray;
+}
+
+.container {
+  display: flex;
+  margin: 16px;
+}
+
+.main {
+  padding: 8px;
+  flex: 4;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 8px;
+  background-color: white;
+}
+.subheading {
+  text-align: center;
+}
+
+.subheading div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.subheading div button {
+  background-color: lightgreen;
+  margin: 4px 8px;
+  padding: 4px 8px;
+}
+
+.active {
+  background-color: green !important;
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.item {
+  margin: 0px 4px 16px 4px;
+  width: 240px;
+  height: 400px;
+  padding: 8px;
+}
+.item img {
+  height: 200px;
+  width: 200px;
+}
+
+.item .item-text {
+  text-align: left;
+  padding: 8px;
+  line-height: 12px;
+  font-size: 12px;
+}
+.secondary {
+  color: #696969;
+}
+
+.item .item-text ul {
+  height: 37px;
+  overflow-y: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .container {
+    display: block;
+  }
+
+  .item {
+    height: 400px;
+    width: auto;
+    padding: 8px;
+  }
+  .item-container {
+    display: block;
+  }
+  .main {
+    flex: 1 1;
+    margin: auto;
+    padding: 4px;
+  }
+}
